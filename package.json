@@ -4,7 +4,7 @@
   "description": "Aprendiendo SASS y NPM",
   "main": "index.js",
   "scripts": {
-    "sass": "sass src/sass/main.scss css/styles.css --watch"
+    "sass": "sass sass/main.scss css/styles.css --watch"
   },
   "repository": {
     "type": "git",
