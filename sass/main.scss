@@ -1,7 +1,3 @@
-@use './layout/body';
-
-// * {
-//     box-sizing: border-box;
-//     margin: 0;
-//     padding: 0;
-// }
+@use './layout/global';
+@use './layout/header';
+@use './components/nav';

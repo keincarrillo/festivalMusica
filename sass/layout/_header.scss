@@ -1,0 +1,26 @@
+@use '../abstracts/var' as v;
+
+header {
+    background-color: v.$greenish;
+    .container-header {
+        padding: 2rem;
+        .logo {
+            color: v.$white;
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        .container-header {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            .logo {
+                text-align: left;
+                margin: 0 2rem 0 0;
+            }
+        }
+    }
+}

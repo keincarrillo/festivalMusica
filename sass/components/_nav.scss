@@ -1,0 +1,18 @@
+@use '../abstracts/var' as v;
+
+.nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    &__link {
+        color: v.$white;
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .nav {
+        flex-direction: row;
+    }
+}
