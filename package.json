@@ -1,0 +1,26 @@
+{
+  "name": "festivalmusica",
+  "version": "1.0.0",
+  "description": "Aprendiendo SASS y NPM",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/sass/main.scss css/styles.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keincarrillo/festivalMusica.git"
+  },
+  "keywords": [
+    "SASS",
+    "NPM"
+  ],
+  "author": "Kein Isaac ISC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keincarrillo/festivalMusica/issues"
+  },
+  "homepage": "https://github.com/keincarrillo/festivalMusica#readme",
+  "devDependencies": {
+    "sass": "^1.77.8"
+  }
+}
