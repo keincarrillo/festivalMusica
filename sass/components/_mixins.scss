@@ -24,3 +24,16 @@
     }
 }
 
+@mixin container {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+@mixin grid($columns, $gap:5rem) {
+    display: grid;
+    gap: $gap;
+    padding-top: 10rem;
+    grid-template-columns: repeat($columns, 1fr);
+}
+

@@ -140,4 +140,32 @@ header .container-header .logo {
   }
 }
 
+.festival {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+  display: grid;
+  gap: 5rem;
+  padding-top: 10rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+.festival__info h2 {
+  margin-bottom: 2rem;
+}
+.festival__info__date {
+  color: #4CB8B3;
+  font-weight: 700;
+}
+.festival__info p {
+  margin-top: 2rem;
+}
+@media (min-width: 768px) {
+  .festival {
+    display: grid;
+    gap: 5rem;
+    padding-top: 10rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
