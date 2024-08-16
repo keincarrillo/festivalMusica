@@ -1,4 +1,5 @@
 @use '../abstracts/var' as v;
+@use './mixins' as m;
 
 .nav {
     align-items: center;
@@ -8,11 +9,11 @@
     &__link {
         color: v.$white;
         font-size: 2.5rem;
+        &:hover {
+            color: v.$yellow;
+        }
     }
-}
-
-@media (min-width: 768px) {
-    .nav {
+    @include m.tablet {
         flex-direction: row;
     }
 }

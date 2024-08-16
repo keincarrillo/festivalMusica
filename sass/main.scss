@@ -1,3 +1,5 @@
 @use './layout/global';
 @use './layout/header';
 @use './components/nav';
+@use './components/mixins';
+@use './layout/video';

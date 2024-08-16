@@ -1,0 +1,45 @@
+@use '../abstracts/var' as v;
+@use '../components/mixins' as m;
+
+.video {
+    position: relative;
+    max-height: 65rem;
+    overflow: hidden;
+    &__overlay {
+        align-items: center;
+        background: linear-gradient(
+            270deg, 
+            rgba(v.$purple, 60%), 
+            rgba(darken(v.$purple, 20%), 90%)
+        );
+        display: flex;
+        position: absolute;
+        inset: 0;
+        &__container {
+            z-index: 10;
+            h2 {
+                color: v.$white;
+                font-size: 7rem;
+                margin: 0;
+            }
+            p {
+                background-color: v.$pink;
+                display: inline-block;
+                color: v.$white;
+                font-size: 2.4rem;
+                font-weight: 700;
+                margin: 0;
+                padding: 1rem 2rem;
+            }
+        }
+    }
+    video {
+        display: block;
+        width: auto;
+    }
+    @include m.tablet {
+        video {
+            width: 100%;
+        }
+    }
+}

@@ -1,4 +1,5 @@
 @use '../abstracts/var' as v;
+@use '../components/mixins' as m;
 
 header {
     background-color: v.$greenish;
@@ -9,10 +10,7 @@ header {
             text-align: center;
         }
     }
-}
-
-@media (min-width: 768px) {
-    header {
+    @include m.tablet {
         .container-header {
             align-items: center;
             display: flex;
@@ -24,3 +22,4 @@ header {
         }
     }
 }
+
