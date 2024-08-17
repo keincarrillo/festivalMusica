@@ -229,4 +229,70 @@ header .container-header .logo {
   background-color: #ffdf18;
 }
 
+.tickets-container {
+  background-color: #4CB8B3;
+}
+.tickets-container h3 {
+  color: #fff;
+}
+.tickets-container .entry__name {
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: 900;
+  margin: 3rem 0;
+  text-align: center;
+}
+.tickets-container .entry__title p, .tickets-container .entryprice p {
+  text-align: center;
+  color: #fff;
+}
+.tickets-container .entry__title {
+  background-color: #F53756;
+}
+.tickets-container .entry__title p {
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  padding: 1rem 0;
+}
+.tickets-container .entry__info {
+  background-color: #fff;
+}
+.tickets-container .entry__info ul li {
+  padding: 2rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+.tickets-container .entry__price {
+  background-color: #fff;
+  padding: 3rem;
+}
+.tickets-container .entry__price p {
+  background-color: #752F97;
+  border-radius: 1rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.8rem;
+  font-weight: 900;
+  padding: 1rem 0;
+  text-align: center;
+}
+.tickets-container .entry__price p:hover {
+  background-color: #391749;
+}
+.tickets-container .entry:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+.tickets-container .tickets {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .tickets-container .tickets {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
