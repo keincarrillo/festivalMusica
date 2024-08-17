@@ -60,6 +60,14 @@ img {
   display: block;
 }
 
+section {
+  padding: 10rem 0;
+}
+
+li {
+  list-style: none;
+}
+
 header {
   background-color: #4CB8B3;
 }
@@ -105,6 +113,7 @@ header .container-header .logo {
   position: relative;
   max-height: 65rem;
   overflow: hidden;
+  padding: 0;
 }
 .video__overlay {
   align-items: center;
@@ -146,7 +155,6 @@ header .container-header .logo {
   margin: 0 auto;
   display: grid;
   gap: 5rem;
-  padding-top: 10rem;
   grid-template-columns: repeat(1, 1fr);
 }
 .festival__info h2 {
@@ -163,9 +171,62 @@ header .container-header .logo {
   .festival {
     display: grid;
     gap: 5rem;
-    padding-top: 10rem;
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.lineup {
+  background-color: #F53756;
+}
+.lineup h3, .lineup__day {
+  text-align: center;
+  color: #fff;
+}
+.lineup__day {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 3rem 0;
+}
+
+.escenarios {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(1, 1fr);
+}
+.escenarios .escenario__name {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 3rem 0;
+}
+.escenarios .escenario__calendar li {
+  padding: 2.5rem;
+  font-weight: 800;
+}
+.escenarios .escenario__calendar li span {
+  font-weight: 400;
+}
+@media (min-width: 768px) {
+  .escenarios {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.bg-green {
+  background-color: #4CB8B3;
+}
+.bg-green li:nth-child(odd) {
+  background-color: #5ebfbb;
+}
+
+.bg-yellow {
+  background-color: #FDDA00;
+}
+.bg-yellow li:nth-child(odd) {
+  background-color: #ffdf18;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,54 @@
+@use '../abstracts/var' as v;
+@use '../components/mixins' as m;
+
+.lineup {
+    background-color: v.$pink;
+    h3, &__day {
+        text-align: center;
+        color: v.$white;
+    }
+    &__day {
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin: 3rem 0
+    }
+}
+
+.escenarios {
+    @include m.grid(1, 5rem);
+    .escenario {
+        &__name {
+            font-size: 3rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 3rem 0;
+        }
+        &__calendar {
+            li {
+                padding: 2.5rem;
+                font-weight: 800;
+                span {
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    @include m.tablet {
+        @include m.grid(2, 5rem);
+    }
+}
+
+.bg-green {
+    background-color: v.$greenish;
+    li:nth-child(odd) {
+        background-color: lighten(v.$greenish, 5%);
+    }
+}
+
+.bg-yellow {
+    background-color: v.$yellow;
+    li:nth-child(odd) {
+        background-color: lighten(v.$yellow, 5%);
+    }
+}
